@@ -1,0 +1,22 @@
+{
+  "name": "run-with-env",
+  "version": "1.0.0",
+  "description": "Run a yarn script with the environment loaded from a .env file",
+  "main": "script.mjs",
+  "repository": "https://github.com/giraugh/simple-dotenv-cli",
+  "author": "Ewan Breakey <ebreakey@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "commander": "^10.0.1",
+    "dotenv": "^16.1.1",
+    "shelljs": "^0.8.5"
+  },
+  "scripts": {
+    "sample:run": "echo hello $NAME",
+    "sample": "node . sample:run"
+  },
+  "bin": {
+    "run-with-env": "./script.mjs"
+  }
+}
